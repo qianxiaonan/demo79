@@ -29,6 +29,7 @@ function avatarAndName(res) {
     if (res.data.user_pic) {
         //用户有自己的头像,展示,隐藏文字头像
         $('.layui-nav-img').attr('src', res.data.user_pic).show()
+        $('.text_avatar').hide()
     } else {
         //用户有自己的头像,隐藏,显示文字头像
         let first = name[0].toUpperCase()
