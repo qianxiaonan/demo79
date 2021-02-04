@@ -32,8 +32,9 @@ function avatarAndName(res) {
         $('.text_avatar').hide()
     } else {
         //用户有自己的头像,隐藏,显示文字头像
+        $('.layui-nav-img').hide()
         let first = name[0].toUpperCase()
-        $('.test_avatar').text(first).show()
+        $('.text_avatar').text(first).show()
     }
 }
 
